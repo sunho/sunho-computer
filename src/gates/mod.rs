@@ -1,9 +1,13 @@
 mod factory;
 mod primitives;
 mod graph;
+mod gate;
+mod utils;
 mod logics;
 
-pub use factory::{GateFactory, GateFactoryFunction, Gate, PinKind, PinKey, PinValues};
+pub use factory::{GateFactory, GateFactoryFunction};
+pub use utils::{PinValues};
+
 #[macro_use] use crate::build_gate_function;
 #[macro_use] use crate::connect;
 

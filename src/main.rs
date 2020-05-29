@@ -1,4 +1,4 @@
-use gates::{PinValues, GateFactory};
+use gates::{GateFactory, PinValues};
 
 mod gates;
 

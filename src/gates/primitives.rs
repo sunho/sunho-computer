@@ -1,4 +1,7 @@
-pub use super::factory::{GateFactory, GateFactoryFunction, Gate, PrimitiveGateImplementor, PinValues, PinKind, PinKey};
+use crate::gates::utils::PinValues;
+use crate::gates::gate::PrimitiveGateImplementor;
+pub use super::factory::{GateFactory, GateFactoryFunction};
+
 #[macro_use] use crate::build_gate_function;
 #[macro_use] use crate::connect;
 
